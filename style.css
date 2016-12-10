@@ -2,9 +2,18 @@
  * lesswrong.ru styles
  */
 
+@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,cyrillic");
+
+body {
+  font-family: 'pt sans','PT Sans',arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility\9;
+}
+
 #page {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 980px;
 }
 
 #header > .section {
@@ -12,8 +21,50 @@
   flex-direction: row;
 }
 
+#main {
+  display: flex;
+  flex-direction: row;
+}
+
+#sidebar-first {
+  order: 1;
+}
+#content {
+  margin-left: 50px;
+  order: 2;
+}
+
+#name-and-slogan {
+  text-align: center;
+}
+#site-name {
+  line-height: 1.2em;
+  margin: 0;
+  margin-bottom: 20px;
+}
+#site-name a {
+  color: black;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: normal;
+}
+#site-name a:hover {
+  text-decoration: underline;
+}
+#site-slogan {
+  font-size: 20px;
+  color: #999;
+}
+
+.block {
+  margin-bottom: 20px;
+}
+
 li a {
   text-decoration: none;
+}
+li a:hover {
+  text-decoration: underline;
 }
 
 div#login-register{
@@ -41,6 +92,15 @@ div.news-body-field  {
   margin-bottom: 1.2em;
 }
 
+.tabs {
+  font-size: 0.8em;
+}
+
+.tabs.primary .active a {
+  background-color: white;
+  border-bottom-color: white;
+}
+
 html,
 button,
 input,
@@ -65,8 +125,8 @@ div.vkwidget {
   overflow: hidden;
 }
 
-#block-lwcustom-lw-translations-toc ul {
-  padding-left: 0;
+ul {
+  padding: 0;
   margin: 0;
 }
 
