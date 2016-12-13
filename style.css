@@ -11,6 +11,32 @@ body {
   text-rendering: optimizeLegibility\9;
 }
 
+html,
+button,
+input,
+select,
+textarea {
+  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
+}
+
+/*
+ * General styles
+ */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ * Major regions
+ */
 #page {
   margin: 0 auto;
   max-width: 980px;
@@ -24,6 +50,12 @@ body {
 #main {
   display: flex;
   flex-direction: row;
+}
+
+#login-register{
+  position: absolute;
+  top: 0.1em;
+  right: 0.75em;
 }
 
 #sidebar-first {
@@ -56,23 +88,32 @@ body {
   color: #999;
 }
 
+/*
+ * Common drupal styles
+ */
 .block {
   margin-bottom: 20px;
 }
 
-li a {
-  text-decoration: none;
-}
-li a:hover {
-  text-decoration: underline;
+.tabs {
+  font-size: 0.8em;
 }
 
-div#login-register{
-  position: absolute;
-  top: 0.1em;
-  right: 0.75em;
+.tabs.primary .active a {
+  background-color: white;
+  border-bottom-color: white;
 }
 
+#breadcrumb {
+  visibility: hidden;
+}
+
+
+/*
+ * Translations and pages
+ */
+
+/* TODO - apply this to all paragraphs? */
 div.field-name-body p {
   margin: 0.3em 0.2em 0.8em 0px;
 }
@@ -88,34 +129,6 @@ div.field-name-field-translators
   float: right;
 }
 
-div.news-body-field  {
-  margin-bottom: 1.2em;
-}
-
-.tabs {
-  font-size: 0.8em;
-}
-
-.tabs.primary .active a {
-  background-color: white;
-  border-bottom-color: white;
-}
-
-html,
-button,
-input,
-select,
-textarea {
-  font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
-}
-
-#breadcrumb {
-  visibility: hidden;
-}
-
-div.branding-elements {
-  margin: 0;
-}
 
 div.view-content {
   font-size: 0.8em;
@@ -125,11 +138,9 @@ div.vkwidget {
   overflow: hidden;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-}
-
+/*
+ * Translations TOC
+ */
 #block-lwcustom-lw-translations-toc li.expanded {
   list-style: none;
   margin-top: 15px;
