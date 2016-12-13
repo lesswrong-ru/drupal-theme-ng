@@ -64,6 +64,7 @@ ul {
 #content {
   margin-left: 50px;
   order: 2;
+  flex: 1;
 }
 
 #name-and-slogan {
@@ -129,13 +130,12 @@ div.field-name-field-translators
   float: right;
 }
 
-
-div.view-content {
-  font-size: 0.8em;
-}
-
 div.vkwidget {
   overflow: hidden;
+}
+
+ul li.statistics_counter {
+  display: none;
 }
 
 /*
