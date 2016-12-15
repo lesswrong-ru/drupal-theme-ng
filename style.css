@@ -34,6 +34,16 @@ ul {
   margin: 0;
 }
 
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
 /*
  * Major regions
  */
@@ -42,9 +52,14 @@ ul {
   max-width: 980px;
 }
 
+#header {
+  margin-bottom: 30px;
+}
+
 #header > .section {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 #main {
@@ -60,9 +75,12 @@ ul {
 
 #sidebar-first {
   order: 1;
+  flex: 0;
+  border: 1px solid #ddd;
+  padding: 25px;
 }
 #content {
-  margin-left: 50px;
+  margin-left: 25px;
   order: 2;
   flex: 1;
 }
@@ -109,6 +127,19 @@ ul {
   visibility: hidden;
 }
 
+ul li.leaf {
+  list-style-image: none;
+  list-style-type: disc;
+}
+
+ul.menu li {
+  margin: 0;
+}
+
+ul.menu ul {
+  padding-left: 15px;
+}
+
 
 /*
  * Translations and pages
@@ -141,6 +172,11 @@ ul li.statistics_counter {
 /*
  * Translations TOC
  */
+#block-lwcustom-lw-translations-toc ul {
+  padding-left: 0;
+  margin: 0;
+}
+
 #block-lwcustom-lw-translations-toc li.expanded {
   list-style: none;
   margin-top: 15px;
@@ -155,4 +191,49 @@ ul li.statistics_counter {
 #block-lwcustom-lw-translations-toc .expanded.menu-depth-2 > a {
   font-size: 1.3em;
   color: #555;
+}
+
+
+/*
+ * sidebar
+ */
+.block-aggregator > h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+.block-aggregator a {
+  font-size: 0.8em;
+}
+
+/*
+ * User menu block
+ */
+#block-system-user-menu > h2 {
+  display: none;
+}
+
+#block-system-user-menu ul.menu > li {
+  text-align: right;
+  list-style: none;
+}
+
+/*
+ * Search sidebar block
+ */
+#search-block-form .container-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#search-block-form .container-inline > .form-item {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 15px;
+  flex: 1;
+}
+
+#search-block-form .container-inline > .form-item > input {
+  width: 100%;
 }
