@@ -77,7 +77,7 @@
 
   <div id="page-wrapper"><div id="page">
 
-    <div id="header"><div class="section">
+    <div id="header">
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -107,7 +107,7 @@
 
       <?php print render($page['header']); ?>
 
-    </div></div> <!-- /.section, /#header -->
+    </div> <!-- /#header -->
 
     <?php if ($main_menu || $secondary_menu): ?>
       <nav id="navigation">

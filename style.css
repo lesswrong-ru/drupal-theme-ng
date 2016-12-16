@@ -53,24 +53,13 @@ h2 {
 }
 
 #header {
-  margin-bottom: 30px;
-}
-
-#header > .section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 #main {
   display: flex;
   flex-direction: row;
-}
-
-#login-register{
-  position: absolute;
-  top: 0.1em;
-  right: 0.75em;
 }
 
 #sidebar {
@@ -80,17 +69,30 @@ h2 {
 }
 #content {
   margin-left: 25px;
-  order: 2;
   flex: 1;
 }
 
+/*
+ * Header styling
+ */
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#logo img {
+  height: 60px;
+  width: auto;
+}
+
 #name-and-slogan {
+  margin-left: 25px;
   text-align: center;
 }
 #site-name {
   line-height: 1.2em;
   margin: 0;
-  margin-bottom: 20px;
 }
 #site-name a {
   color: black;
