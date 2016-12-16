@@ -73,8 +73,7 @@ h2 {
   right: 0.75em;
 }
 
-#sidebar-first {
-  order: 1;
+#sidebar {
   flex: 0;
   border: 1px solid #ddd;
   padding: 25px;

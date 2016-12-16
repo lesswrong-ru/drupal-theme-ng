@@ -3,11 +3,9 @@ description = Experiments with Drupal theming
 core = 7.x
 
 regions[header] = Header
-regions[highlighted] = Highlighted
 regions[help] = Help
 regions[content] = Content
-regions[sidebar_first] = Left sidebar
-regions[sidebar_second] = Right sidebar
+regions[sidebar] = Sidebar
 regions[footer] = Footer
 
 stylesheets[all][] = style.css
