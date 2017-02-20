@@ -94,6 +94,9 @@ main {
   width: auto;
 }
 
+/*
+ * Top header hgroup
+ */
 #name-and-slogan {
   margin-left: 25px;
   text-align: center;
@@ -114,6 +117,8 @@ main {
 }
 #site-slogan {
   font-size: 20px;
+  line-height: 1em;
+  margin: 0;
   color: #999;
 }
 

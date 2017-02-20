@@ -75,7 +75,7 @@
  */
 ?>
 
-  <div id="page-wrapper"><div id="page">
+  <div id="page">
 
     <header id="header">
 
@@ -86,23 +86,17 @@
       <?php endif; ?>
 
       <?php if ($site_name || $site_slogan): ?>
-        <div id="name-and-slogan">
+        <hgroup id="name-and-slogan">
           <?php if ($site_name): ?>
-            <?php if ($title): ?>
-              <div id="site-name">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </div>
-            <?php else: /* Use h1 when the content title is empty */ ?>
-              <h1 id="site-name">
-                <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </h1>
-            <?php endif; ?>
+            <h1 id="site-name">
+              <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><?php print $site_name; ?></a>
+            </h1>
           <?php endif; ?>
 
           <?php if ($site_slogan): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
+            <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
           <?php endif; ?>
-        </div> <!-- /#name-and-slogan -->
+        </hgroup> <!-- /#name-and-slogan -->
       <?php endif; ?>
 
       <?php print render($page['header']); ?>
@@ -130,9 +124,9 @@
     <div id="main-wrapper">
 
       <?php if ($page['sidebar']): ?>
-        <div id="sidebar">
+        <aside id="sidebar">
           <?php print render($page['sidebar']); ?>
-        </div> <!-- /#sidebar -->
+        </aside> <!-- /#sidebar -->
       <?php endif; ?>
 
       <main>
@@ -153,4 +147,4 @@
       <?php print render($page['footer']); ?>
     </footer> <!-- /#footer -->
 
-  </div></div> <!-- /#page, /#page-wrapper -->
+  </div> <!-- /#page -->
