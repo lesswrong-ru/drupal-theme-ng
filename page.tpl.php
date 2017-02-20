@@ -77,7 +77,7 @@
 
   <div id="page-wrapper"><div id="page">
 
-    <div id="header">
+    <header id="header">
 
       <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
@@ -89,9 +89,9 @@
         <div id="name-and-slogan">
           <?php if ($site_name): ?>
             <?php if ($title): ?>
-              <div id="site-name"><strong>
+              <div id="site-name">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-              </strong></div>
+              </div>
             <?php else: /* Use h1 when the content title is empty */ ?>
               <h1 id="site-name">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
@@ -107,7 +107,7 @@
 
       <?php print render($page['header']); ?>
 
-    </div> <!-- /#header -->
+    </header> <!-- /#header -->
 
     <?php if ($main_menu || $secondary_menu): ?>
       <nav id="navigation">
@@ -127,15 +127,15 @@
 
     <?php print $messages; ?>
 
-    <div id="main-wrapper"><div id="main" class="clearfix">
+    <div id="main-wrapper">
 
       <?php if ($page['sidebar']): ?>
-        <div id="sidebar" class="column sidebar"><div class="section">
+        <div id="sidebar">
           <?php print render($page['sidebar']); ?>
-        </div></div> <!-- /.section, /#sidebar -->
+        </div> <!-- /#sidebar -->
       <?php endif; ?>
 
-      <div id="content" class="column"><div class="section">
+      <main>
         <a id="main-content"></a>
         <?php print render($title_prefix); ?>
         <?php if ($title): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
@@ -145,13 +145,12 @@
         <?php if ($action_links): ?><ul class="action-links"><?php print render($action_links); ?></ul><?php endif; ?>
         <?php print render($page['content']); ?>
         <?php print $feed_icons; ?>
-      </div></div> <!-- /.section, /#content -->
+      </main>
 
+    </div> <!-- /#main-wrapper -->
 
-    </div></div> <!-- /#main, /#main-wrapper -->
-
-    <div id="footer"><div class="section">
+    <footer id="footer">
       <?php print render($page['footer']); ?>
-    </div></div> <!-- /.section, /#footer -->
+    </footer> <!-- /#footer -->
 
   </div></div> <!-- /#page, /#page-wrapper -->
