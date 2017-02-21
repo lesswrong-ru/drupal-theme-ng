@@ -23,11 +23,10 @@ textarea {
  * General styles
  */
 a {
-  text-decoration: none;
   color: #086391;
 }
 a:hover {
-  text-decoration: underline;
+  color: #069;
 }
 
 img {
@@ -40,7 +39,8 @@ img,embed,object,video {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
+  line-height: 1em;
   font-weight: normal;
 }
 
@@ -68,6 +68,7 @@ p {
 #main-wrapper {
   display: flex;
   flex-direction: row;
+  margin-top: 20px;
 }
 
 #sidebar {
@@ -154,6 +155,10 @@ main {
 /*
  * Common drupal styles
  */
+#page-title {
+  font-weight: bold;
+}
+
 .block {
   margin-bottom: 20px;
 }
@@ -165,10 +170,6 @@ main {
 .tabs.primary .active a {
   background-color: white;
   border-bottom-color: white;
-}
-
-#breadcrumb {
-  visibility: hidden;
 }
 
 ul li.leaf {
@@ -211,11 +212,18 @@ ul.menu li > a.active {
     font-weight: bold;
 }
 
+ul.menu li.expanded > a {
+    text-decoration: none;
+}
+ul.menu li.expanded > a:hover {
+    text-decoration: underline;
+}
+
 /*
  * Main styling
  */
 main {
-  font-size: 20px;
+  font-size: 19.96px;
 }
 main p {
   margin: 1em 0 0 0;
@@ -238,6 +246,15 @@ main p:last-child {
     margin: 0;
 }
 
+/* Breadcrumbs */
+.breadcrumb {
+  font-size: 0.85em;
+  color: #999;
+}
+.breadcrumb a {
+  color: black;
+}
+
 /* Primary tabs */
 .tabs.primary {
   border: none;
@@ -249,8 +266,8 @@ main p:last-child {
 .tabs.primary li a {
   border: none;
   margin: 0;
-  margin-right: 0.5em;
-  padding: 0;
+  margin-right: 4px;
+  padding: 1px;
   background-color: inherit;
   color: #999;
   font-family: 'pt sans','PT Sans',arial,sans-serif;
@@ -258,8 +275,8 @@ main p:last-child {
 .tabs.primary li.active a {
   border: none;
   margin: 0;
-  margin-right: 0.5em;
-  padding: 0;
+  margin-right: 4px;
+  padding: 1px;
   color: black;
 }
 
@@ -267,9 +284,12 @@ main p:last-child {
  * Translations and pages
  */
 
-div.field-name-field-author {
+.field-name-field-author {
   max-width: 100%;
   text-align: right;
+  font-style: italic;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
 
 div.field-name-field-translators
@@ -314,12 +334,6 @@ ul li.statistics_counter {
   color: black;
 }
 
-ul.menu li.expanded > a {
-    text-decoration: none;
-}
-ul.menu li.expanded > a:hover {
-    text-decoration: underline;
-}
 
 /*
  * sidebar
