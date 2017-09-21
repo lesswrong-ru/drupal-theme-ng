@@ -23,10 +23,10 @@ textarea {
  * General styles
  */
 a {
-  color: #086391;
+  color: hsl(200, 90%, 30%);
 }
 a:hover {
-  color: #069;
+  color: hsl(200, 90%, 45%);
 }
 
 img {
@@ -80,7 +80,7 @@ p {
 
 main {
   margin-left: 40px;
-  margin-right: 25px;
+  margin-right: 40px;
   flex: 1;
 }
 
@@ -132,9 +132,9 @@ main {
 #navigation {
   display: flex;
   justify-content: space-between;
-  border: 1px solid #8fcfef;
-  margin-bottom: 10px;
-  background-color: #bce2f5;
+  border: 1px solid hsl(200, 75%, 80%);
+  margin-bottom: 40px;
+  background-color: hsl(200, 75%, 92%);
 }
 
 #navigation > h2 {
@@ -223,7 +223,7 @@ ul.menu li.expanded > a:hover {
  * Main styling
  */
 main {
-  font-size: 19.96px;
+  font-size: 18px;
 }
 main p {
   margin: 1em 0 0 0;
