@@ -30,12 +30,12 @@ a:hover {
 }
 
 img {
-    height: auto;
-    -ms-interpolation-mode: bicubic;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
 }
 
 img,embed,object,video {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 h1 {
@@ -56,32 +56,51 @@ p {
  * Major regions
  */
 #page {
-  margin: 0 auto;
-  max-width: 1080px;
 }
 
 #header {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+}
+
+#footer {
+  margin-top: 25px;
 }
 
 #main-wrapper {
+  margin: 0 auto;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
 }
 
 #sidebar {
   flex: 0;
-  border-right: 3px solid #ddd;
-  padding-right: 20px;
+  border: 1px solid hsl(0, 0%, 87%);
+  border-left: none;
+  padding: 0 20px;
+  padding-top: 20px;
+  background-color: #f8f8f8;
   width: 290px;
+}
+
+@media (max-width: 780px) {
+  #sidebar {
+    display: none;
+  }
 }
 
 main {
   margin-left: 40px;
-  margin-right: 40px;
+  max-width: 680px;
+  padding: 0 40px;
   flex: 1;
+}
+
+@media (max-width: 1120px) {
+  main {
+    padding: 0 10px;
+    margin: 0 auto;
+  }
 }
 
 /*
@@ -90,66 +109,68 @@ main {
 #header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-
-#logo img {
-  height: 60px;
-  width: auto;
-}
-
-/*
- * Top header hgroup
- */
-#name-and-slogan {
-  margin-left: 25px;
-  text-align: center;
-}
-#site-name {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   height: 40px;
-  margin: 0;
+  background-color: hsl(90, 0%, 30%);
 }
-#site-name a {
-  color: black;
-  text-decoration: none;
-  font-size: 40px;
-  line-height: 40px;
-  font-weight: normal;
-}
-#site-name a:hover {
-  text-decoration: underline;
-}
-#site-slogan {
-  font-size: 20px;
-  line-height: 1em;
-  margin: 0;
-  color: #999;
+
+#logo {
+  width: 340px;
+  color: hsl(90, 50%, 55%);
+  padding-left: 15px;
+  font-weight: bold;
 }
 
 /*
  * Main menu
  */
-#navigation {
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid hsl(200, 75%, 80%);
-  margin-bottom: 40px;
-  background-color: hsl(200, 75%, 92%);
+
+#header .contextual-links-region {
+  display: none; /* analytics blocks are located in menu for some reason... */
 }
 
-#navigation > h2 {
-  display: none;
+#header li {
+  padding: 8px 15px;
+  display: block;
 }
 
-#navigation a {
+#header a {
   font-size: 1.2em;
-  color: black;
-  display: inline-block;
-  padding: 15px;
+  color: hsl(90, 50%, 95%);
+  text-decoration: none;
 }
 
-#navigation ul {
+#header a:hover {
+  border-bottom: 2px solid hsl(90, 0%, 95%);
+}
+
+#header ul, #header nav {
   margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#header ul {
+  margin: 0;
+}
+
+#primary-menu-nav {
+  flex: 1;
+}
+
+#secondary-menu-nav {
+  flex: 0;
+}
+
+#secondary-menu-nav ul {
+  flex-wrap: nowrap;
+}
+
+#secondary-menu-nav li {
+  padding: 0 10px;
 }
 
 /*
@@ -170,6 +191,16 @@ main {
 .tabs.primary .active a {
   background-color: white;
   border-bottom-color: white;
+}
+
+.node-links-nav {
+  margin-top: 5px;
+  font-size: 0.8em;
+}
+
+ul.inline li {
+  padding: 0;
+  padding-right: 10px;
 }
 
 ul li.leaf {
@@ -223,7 +254,7 @@ ul.menu li.expanded > a:hover {
  * Main styling
  */
 main {
-  font-size: 18px;
+  font-size: 16px;
 }
 main p {
   margin: 1em 0 0 0;

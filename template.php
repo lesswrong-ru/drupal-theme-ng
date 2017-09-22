@@ -11,3 +11,15 @@ function lw_testtheme_menu_link(array $variables) {
     $output = l($element['#title'], $element['#href'], $element['#localized_options']);
     return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>";
 }
+
+function lw_testtheme_preprocess_html(&$vars) {
+  $viewport = array(
+   '#tag' => 'meta',
+   '#attributes' => array(
+     'name' => 'viewport',
+     'content' => 'width=device-width, initial-scale=1',
+   ),
+  );
+  drupal_add_html_head($viewport, 'viewport');
+}
+?>

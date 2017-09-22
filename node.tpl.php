@@ -105,7 +105,9 @@
     ?>
   </div>
 
-  <?php print render($content['links']); ?>
+  <nav class="node-links-nav">
+    <?php print render($content['links']); ?>
+  </nav>
 
   <?php print render($content['comments']); ?>
 
