@@ -2,7 +2,7 @@
  * lesswrong.ru styles
  */
 
-@import url("http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,cyrillic");
+@import url("//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,cyrillic");
 
 body {
   font-family: 'pt sans','PT Sans',arial,sans-serif;
