@@ -1,5 +1,5 @@
-name = LW theme 2.0
-description = Experiments with Drupal theming
+name = LW theme VERSION
+description = LessWrong.ru Drupal theme
 core = 7.x
 
 regions[header] = Header
