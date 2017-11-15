@@ -40,7 +40,7 @@ img,embed,object,video {
 
 h1 {
   font-size: 1.8em;
-  line-height: 1em;
+  line-height: 1;
   font-weight: normal;
 }
 
@@ -387,13 +387,13 @@ span.translations-violet {
 
 #block-lwcustom-lw-translations-toc .expanded.menu-depth-1 > a {
   font-size: 1.7em;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: black;
 }
 
 #block-lwcustom-lw-translations-toc .expanded.menu-depth-2 > a {
   font-size: 1.3em;
-  line-height: 1.4em;
+  line-height: 1.4;
   color: black;
 }
 
