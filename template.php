@@ -1,5 +1,5 @@
 <?php
-function lw_testtheme_menu_link(array $variables) {
+function THEMENAME_menu_link(array $variables) {
     $element = $variables['element'];
     $sub_menu = '';
 
@@ -12,7 +12,7 @@ function lw_testtheme_menu_link(array $variables) {
     return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>";
 }
 
-function lw_testtheme_preprocess_html(&$vars) {
+function THEMENAME_preprocess_html(&$vars) {
   $viewport = array(
    '#tag' => 'meta',
    '#attributes' => array(
