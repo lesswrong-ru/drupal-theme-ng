@@ -80,13 +80,9 @@
     <header id="header">
 
       <div id="logo">
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-        <!--
-        <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        -->
-        LessWrong.ru
-
-      </a>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
+          <img src="/sites/all/themes/THEMENAME/lw-logo.png" alt="<?php print t('Home'); ?>" heigth="22" width="240" />
+        </a>
       </div>
 
       <?php print render($page['header']); ?>
