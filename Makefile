@@ -2,7 +2,12 @@
 
 VERSION = $(shell git symbolic-ref --short HEAD)
 SHORT_VERSION = $(shell git symbolic-ref --short HEAD | sed -e 's/\.//')
-THEME_NAME=lw_theme$(SHORT_VERSION)
+
+ifeq ($(SHORT_VERSION),master)
+	THEME_NAME=lw_theme
+else
+	THEME_NAME=lw_theme$(SHORT_VERSION)
+endif
 
 build: clean
 	mkdir build
