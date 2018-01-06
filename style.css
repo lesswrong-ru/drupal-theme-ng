@@ -346,27 +346,27 @@ span.translations-darkred {
 }
 
 span.translations-brown {
-  color: #663300;  
+  color: #663300;
 }
 
 span.translations-purple {
-  color: #9900ff;  
+  color: #9900ff;
 }
 
 span.translations-grey {
-  color: #666633;  
+  color: #666633;
 }
 
 span.translations-green {
-  color: #00cc00;  
+  color: #00cc00;
 }
 
 span.translations-blue {
-  color: #0000cc;    
+  color: #0000cc;
 }
 
 span.translations-violet {
-  color: #6633cc;    
+  color: #6633cc;
 }
 
 /*
@@ -395,6 +395,39 @@ span.translations-violet {
   font-size: 1.3em;
   line-height: 1.4em;
   color: black;
+}
+
+
+.view-all-sequences a{
+ color:black;
+}
+
+.book-node-type-sequence a {
+   color: grey;
+}
+
+.depth-2{
+   margin-top:6pt;
+   margin-left:5%;
+   font-size:150%;
+}
+
+.depth-3{
+   margin-top:6pt;
+   margin-left:10%;
+   font-size:130%;
+}
+
+.depth-4{
+   margin-left:15%;
+}
+
+.depth-5{
+   margin-left:20%;
+}
+
+.type-translation{
+   font-size:100%;
 }
 
 
