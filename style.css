@@ -4,8 +4,12 @@
 
 @import url("//fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,cyrillic");
 
+#page * {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'pt sans','PT Sans',arial,sans-serif;
+  font-family: 'pt sans', 'PT Sans', arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility\9;
@@ -91,7 +95,7 @@ p {
 
 main {
   margin-left: 40px;
-  max-width: 680px;
+  max-width: 720px;
   padding: 0 40px;
   flex: 1;
 }
