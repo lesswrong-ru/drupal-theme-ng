@@ -23,6 +23,12 @@ textarea {
   font-family: Verdana, Tahoma, "DejaVu Sans", sans-serif;
 }
 
+button, input[type="submit"] {
+  background: hsl(200, 90%, 90%);
+  border: 1px solid hsl(200, 90%, 80%);
+  cursor: pointer;
+}
+
 /*
  * General styles
  */
@@ -84,7 +90,7 @@ p {
   padding: 0 20px;
   padding-top: 20px;
   background-color: #f8f8f8;
-  width: 270px;
+  width: 295px;
 }
 
 @media (max-width: 780px) {
@@ -463,56 +469,30 @@ span.translations-violet {
   font-size: 1.2rem;
 }
 
-/*
-.view-all-sequences h1 > a {
-  font-weight: bold;
-}
-
-.view-all-sequences a {
- color: black;
-}
-
-.book-node-type-sequence a {
-   color: grey;
-}
-
-.depth-2 {
-   margin-top: 8px;
-   margin-bottom: 4px;
-   font-size: 1.5rem;
-}
-
-.depth-3 {
-   margin-top: 8px;
-   margin-bottom: 4px;
-   margin-left: 20px;
-   font-size: 1.3rem;
-}
-
-.depth-4 {
-   margin-left: 40px;
-}
-
-.depth-5 {
-   margin-left: 60px;
-}
-
-.type-translation {
-   font-size: 1rem;
-}
-*/
-
 
 /*
  * Sidebar
  */
-.block-aggregator > h2 {
+#sidebar h2 {
+  margin: 0.4em 0;
   font-size: 1.2em;
   font-weight: normal;
 }
 
-.block-aggregator a {
-  font-size: 0.8em;
+#sidebar a {
+  font-size: 0.85em;
+  color: black;
+}
+
+#sidebar li.leaf, #sidebar li.views-row {
+  margin: 0;
+  padding: 0;
+  margin: 0.4em 0;
+}
+
+#sidebar li.leaf, #sidebar li.views-row {
+  list-style-type: none;
+  list-style-image: none;
 }
 
 /*
