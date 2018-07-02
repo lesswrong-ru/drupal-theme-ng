@@ -488,9 +488,7 @@ span.translations-violet {
   margin: 0;
   padding: 0;
   margin: 0.4em 0;
-}
 
-#sidebar li.leaf, #sidebar li.views-row {
   list-style-type: none;
   list-style-image: none;
 }
