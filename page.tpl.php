@@ -81,7 +81,7 @@
 
       <div id="logo">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
-          <img src="/sites/all/themes/THEMENAME/lw-logo.png" alt="<?php print t('Home'); ?>" heigth="22" width="240" />
+          <img src="/sites/all/themes/THEMENAME/lw-logo.svg" alt="<?php print t('Home'); ?>" />
         </a>
       </div>
 
