@@ -11,10 +11,10 @@ endif
 
 build: clean
 	mkdir build
-	cp *.css build/
-	rm build/drupal-core.css
+	sass ./sass/main.scss build/style.css
 	cp *.php build/
 	cp *.png build/
+	cp *.svg build/
 	cp lw_theme.info build/$(THEME_NAME).info
 	sed -i '' -e 's/THEMENAME/$(THEME_NAME)/' build/*.php
 	sed -i '' -e 's/name = LW theme VERSION/name = LW theme $(VERSION)/' build/$(THEME_NAME).info

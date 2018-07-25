@@ -1,0 +1,85 @@
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: hsl(90, 0%, 30%);
+
+  justify-content: initial;
+  overflow-x: hidden;
+
+  .contextual-links-region {
+    display: none; /* analytics blocks are located in menu for some reason... */
+  }
+  @media screen and (max-width: 650px) {
+    font-size: 2.4vw;
+
+    #logo {
+      display: none;
+    }
+
+    #primary-menu-nav {
+      margin-left: auto;
+      margin-right: auto;
+      flex: 0 0 0;
+      align-items: initial;
+    }
+
+    #secondary-menu-nav ul {
+      padding: 0;
+    }
+
+    #primary-menu-nav li {
+      padding: 0.5em 0.93em
+    }
+  }
+
+  li {
+    padding: 8px 15px;
+    display: block;
+  }
+
+  a {
+    font-size: 1.2em;
+    color: hsl(90, 50%, 95%);
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-bottom: 2px solid hsl(90, 0%, 95%);
+  }
+
+  ul, nav {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+#logo {
+  width: 355px;
+  padding-left: 15px;
+  img {
+    vertical-align: middle;
+  }
+}
+
+#primary-menu-nav {
+  flex: 1;
+}
+
+#secondary-menu-nav {
+  flex: 0;
+  font-size: 0.8em;
+
+  ul {
+    flex-wrap: nowrap;
+  }
+
+  li {
+    padding: 0 10px;
+  }
+}
