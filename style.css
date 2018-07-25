@@ -131,11 +131,9 @@ main {
   color: hsl(90, 50%, 55%);
   padding-left: 15px;
   font-weight: bold;
-
-  img {
-    height: 32px;
-    width: auto;
-  }
+}
+#logo img {
+  vertical-align: middle;
 }
 
 /*
