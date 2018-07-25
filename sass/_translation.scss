@@ -1,9 +1,11 @@
+@import 'vars';
+
 .field-name-field-author {
-  max-width: 100%;
-  text-align: right;
   font-style: italic;
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: $font-serif;
 }
 
 div.field-name-field-translators

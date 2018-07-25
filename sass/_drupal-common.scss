@@ -117,7 +117,6 @@ ul.menu li > a.active {
   margin: 0;
   padding: 0;
   font-size: 0.85em;
-  margin-bottom: 16px;
 
   li a {
     border: none;
@@ -141,4 +140,9 @@ ul.menu li > a.active {
 
 ul li.statistics_counter {
   display: none;
+}
+
+.addtoany_list {
+  display: block;
+  margin: 10px 0;
 }
