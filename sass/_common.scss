@@ -44,12 +44,19 @@ img,embed,object,video {
 }
 
 h1 {
-  font-size: 1.8em;
-  line-height: 1;
+  font-size: 2.2em;
+  line-height: 2;
   font-weight: normal;
 }
 
 h2 {
   font-size: 1.5em;
   font-weight: normal;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-bottom: 1px solid #ddd;
+  margin: 20px 0;
 }

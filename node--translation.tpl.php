@@ -101,8 +101,17 @@
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      print render($content['field_author']);
     ?>
+
+    <hr />
     <?php
+      print render($content['body']);
+    ?>
+    <hr />
+
+    <?php
+      // rest of fields (is this necessary?)
       print render($content);
     ?>
   </div>

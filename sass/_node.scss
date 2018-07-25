@@ -1,6 +1,7 @@
 @import 'vars';
 
 main {
+
   p {
     margin: 1em 0 0 0;
     line-height: 1.4;
@@ -15,6 +16,7 @@ main {
 
 .field-name-body {
   font-family: $font-serif;
+  font-size: 18px;
 
   li {
     line-height: 1.4;
@@ -32,4 +34,5 @@ main {
 
 #page-title {
   margin: 0;
+  font-family: $font-serif;
 }
