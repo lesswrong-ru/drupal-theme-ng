@@ -7,7 +7,8 @@
    version="1.2"
    viewBox="0 0 184.77432 26.578135"
    height="27px"
-   width="185px">
+   width="185px"
+>
   <defs>
     <symbol
        style="overflow:visible"
@@ -100,7 +101,7 @@
          style="stroke:none" />
     </symbol>
   </defs>
-  <g fill="#000" transform="translate(-0.75,19.765635)">
+  <g fill="#f2f9ec" transform="translate(-0.75,19.765635)">
     <use xlink:href="#glyph1-1" x="0" y="0" />
     <use xlink:href="#glyph1-2" x="17.789989" y="0" />
     <use xlink:href="#glyph1-3" x="32.549988" y="0" />
