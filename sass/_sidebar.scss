@@ -1,0 +1,25 @@
+#sidebar {
+  h2 {
+    margin: 0.4em 0;
+    font-size: 1.2em;
+    font-weight: normal;
+  }
+
+  a {
+    font-size: 0.85em;
+    color: black;
+  }
+
+  li.leaf, li.views-row {
+    margin: 0;
+    padding: 0;
+    margin: 0.4em 0;
+
+    list-style-type: none;
+    list-style-image: none;
+  }
+}
+
+div.vkwidget {
+  overflow: hidden;
+}

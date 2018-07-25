@@ -9,4 +9,3 @@ regions[sidebar] = Sidebar
 regions[footer] = Footer
 
 stylesheets[all][] = style.css
-stylesheets[all][] = normalize.css

@@ -11,8 +11,7 @@ endif
 
 build: clean
 	mkdir build
-	cp *.css build/
-	rm build/drupal-core.css
+	sass ./sass/main.scss build/style.css
 	cp *.php build/
 	cp *.png build/
 	cp *.svg build/
