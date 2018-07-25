@@ -45,8 +45,10 @@ img,embed,object,video {
 
 h1 {
   font-size: 2.2em;
-  line-height: 2;
+  line-height: 1;
+  margin: 20px 0;
   font-weight: normal;
+  font-family: $font-serif;
 }
 
 h2 {
