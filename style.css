@@ -176,6 +176,7 @@ main {
 
 #secondary-menu-nav {
   flex: 0;
+  font-size: 0.8em;
 }
 
 #secondary-menu-nav ul {
@@ -193,7 +194,7 @@ main {
 
 @media screen and (max-width: 650px) {
   #header #logo {
-    flex: 0 0 0;
+    display: none;
   }
 
   #header #primary-menu-nav {
@@ -217,7 +218,7 @@ main {
 }
 
 /*
- * Common drupal styles
+ * Common Drupal styles
  */
 #page-title {
   font-weight: bold;
@@ -355,6 +356,66 @@ main p:last-child {
 }
 
 /*
+ * Sidebar
+ */
+#sidebar h2 {
+  margin: 0.4em 0;
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+#sidebar a {
+  font-size: 0.85em;
+  color: black;
+}
+
+#sidebar li.leaf, #sidebar li.views-row {
+  margin: 0;
+  padding: 0;
+  margin: 0.4em 0;
+}
+
+#sidebar li.leaf, #sidebar li.views-row {
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/*
+ * User menu block
+ */
+#block-system-user-menu > h2 {
+  display: none;
+}
+
+#block-system-user-menu ul.menu > li {
+  text-align: right;
+  list-style: none;
+}
+
+/*
+ * Search sidebar block
+ */
+#search-block-form .container-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#search-block-form .container-inline > .form-item {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 15px;
+  flex: 1;
+}
+
+#search-block-form .container-inline > .form-item > input {
+  width: 100%;
+}
+
+
+/**************************** LW-specific blocks **************************/
+
+/*
  * Translations and pages
  */
 
@@ -472,63 +533,6 @@ span.translations-violet {
   font-size: 1.2rem;
 }
 
-
-/*
- * Sidebar
- */
-#sidebar h2 {
-  margin: 0.4em 0;
-  font-size: 1.2em;
-  font-weight: normal;
-}
-
-#sidebar a {
-  font-size: 0.85em;
-  color: black;
-}
-
-#sidebar li.leaf, #sidebar li.views-row {
-  margin: 0;
-  padding: 0;
-  margin: 0.4em 0;
-}
-
-#sidebar li.leaf, #sidebar li.views-row {
-  list-style-type: none;
-  list-style-image: none;
-}
-
-/*
- * User menu block
- */
-#block-system-user-menu > h2 {
-  display: none;
-}
-
-#block-system-user-menu ul.menu > li {
-  text-align: right;
-  list-style: none;
-}
-
-/*
- * Search sidebar block
- */
-#search-block-form .container-inline {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-#search-block-form .container-inline > .form-item {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 15px;
-  flex: 1;
-}
-
-#search-block-form .container-inline > .form-item > input {
-  width: 100%;
-}
 
 /*
  * Kocherga banner
