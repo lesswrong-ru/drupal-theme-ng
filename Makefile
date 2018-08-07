@@ -19,7 +19,7 @@ build: clean
 	sed -i '' -e 's/THEMENAME/$(THEME_NAME)/' build/*.php
 	sed -i '' -e 's/name = LW theme VERSION/name = LW theme $(VERSION)/' build/$(THEME_NAME).info
 
-deploy-new:
+deploy-new: build
 	ssh lesswrong.ru 'mkdir /srv/lesswrong.ru/sites/all/themes/$(THEME_NAME)'
 	scp build/* lesswrong.ru:/srv/lesswrong.ru/sites/all/themes/$(THEME_NAME)/
 	ssh lesswrong.ru 'cd /srv/lesswrong.ru && drush pm-enable $(THEME_NAME)'
