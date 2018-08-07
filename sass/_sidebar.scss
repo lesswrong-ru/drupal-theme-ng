@@ -11,6 +11,10 @@
 
   a {
     color: black;
+
+    &:hover {
+      color: hsl(200, 90%, 45%);
+    }
   }
 
   li {
@@ -22,6 +26,10 @@
 
     list-style-type: none;
     list-style-image: none;
+  }
+
+  .kocherga-event-aggregator-description {
+    color: #666;
   }
 }
 
