@@ -22,4 +22,12 @@ function THEMENAME_preprocess_html(&$vars) {
   );
   drupal_add_html_head($viewport, 'viewport');
 }
+
+function THEMENAME_aggregator_block_item($variables) {
+    $result = '<a href="' . check_url($variables['item']->link) . '">' . check_plain($variables['item']->title) . "</a>\n";
+    if (strpos($variables['item']->guid, "https://api.kocherga.club") === 0) {
+        $result .= "<br>" . $variables['item']->description . "\n";
+    }
+    return $result;
+}
 ?>
