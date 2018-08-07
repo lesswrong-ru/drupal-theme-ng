@@ -80,27 +80,6 @@ ul.menu li > a.active {
 }
 
 
-/*
- * Search sidebar block
- */
-#search-block-form .container-inline {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  > .form-item {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 15px;
-    flex: 1;
-
-    .form-item > input {
-      width: 100%;
-    }
-  }
-}
-
-
 /* Breadcrumbs */
 .breadcrumb {
   font-size: 0.85em;

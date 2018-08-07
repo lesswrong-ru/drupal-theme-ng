@@ -5,15 +5,20 @@
     font-weight: normal;
   }
 
-  a {
+  .content {
     font-size: 0.85em;
+  }
+
+  a {
     color: black;
   }
 
-  li.leaf, li.views-row {
-    margin: 0;
+  li {
+    margin: 0.5em 0;
+  }
+
+  li.leaf, li.views-row, .item-list li {
     padding: 0;
-    margin: 0.4em 0;
 
     list-style-type: none;
     list-style-image: none;
@@ -25,3 +30,26 @@ div.vkwidget {
   height: 272px;
   background: #fff;
 }
+
+
+/*
+ * Search sidebar block
+ */
+#search-block-form .container-inline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 1rem;
+
+  > .form-item {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 15px;
+    flex: 1;
+
+    > input {
+      width: 100%;
+    }
+  }
+}
+
